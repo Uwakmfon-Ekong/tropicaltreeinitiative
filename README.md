@@ -1,6 +1,6 @@
 # TRCC Website
 
-Tropical Research and Conservation Centre — built with Next.js 15 + Tailwind CSS 3.
+Tropical Tree initiative
 
 ## Getting Started
 
