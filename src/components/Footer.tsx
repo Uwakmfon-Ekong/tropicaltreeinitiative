@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 const footerLinks = {
   Organisation: [
     { label: "About Us", href: "/about" },
@@ -25,9 +28,14 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         {/* Brand */}
         <div className="md:col-span-1">
-          <div className="font-serif text-2xl font-semibold text-cream mb-3">
-            🌿 TRCC
-          </div>
+          <Link href="/" className="flex items-center gap-3 no-underline">
+            <Image
+              src="/tropslogo.png"
+              alt="TRCC Logo"
+              width={50}
+              height={50}
+            />
+          </Link>
           <p className="text-[13px] text-cream/40 leading-relaxed max-w-[240px]">
             Tropical Research and Conservation Centre — advancing environmental
             conservation and sustainable livelihoods in Nigeria since 2001.

@@ -78,14 +78,16 @@ export default function Thematic() {
             </span>
 
             <div className="mb-5">
-              <div className="rounded-xl flex items-center justify-center relative">
+              <div className="relative h-56 w-full overflow-hidden rounded-xl">
                 <Image
                   src={a.image}
                   alt={a.title}
-                  width={500}
-                  height={200}
-                  className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+
+                {/* optional subtle overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
               </div>
             </div>
             <h3 className="font-serif text-xl font-semibold text-green-dark mb-2 leading-snug">

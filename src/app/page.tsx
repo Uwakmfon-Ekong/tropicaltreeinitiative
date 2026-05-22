@@ -7,12 +7,14 @@ import Blog from "@/components/Blog";
 import TeamAndPartners from "@/components/TeamAndPartners";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Partners from "@/components/Partners";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
+      <Partners />
       <About />
       <Thematic />
       <Projects />

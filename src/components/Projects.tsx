@@ -1,8 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
   {
-    emoji: "🌊",
+    image: "/mangroverestore.jpeg",
+    
     gradient: "from-[#1b4332] to-[#2d6a4f]",
     tag: "Ongoing",
     title: "Niger Delta Mangrove Restoration",
@@ -10,7 +12,7 @@ const projects = [
     href: "/projects/mangrove-restoration",
   },
   {
-    emoji: "🌳",
+   image: "/socialimpact.jpeg",
     gradient: "from-[#3a5a40] to-[#588157]",
     tag: "Social Impact",
     title: "1 Million Agro-Forestry Trees",
@@ -18,7 +20,7 @@ const projects = [
     href: "/projects/agro-forestry",
   },
   {
-    emoji: "🤝",
+    image: "/trcc1.jpg",
     gradient: "from-[#52796f] to-[#354f52]",
     tag: "Community",
     title: "Ondo State Community Consultation",
@@ -57,11 +59,24 @@ export default function Projects() {
             href={p.href}
             className="group rounded-[20px] overflow-hidden border border-white/8 bg-white/4 hover:-translate-y-1.5 hover:border-green-accent/40 transition-all duration-250 no-underline block"
           >
-            <div
-              className={`h-44 flex items-center justify-center text-5xl bg-gradient-to-br ${p.gradient}`}
-            >
-              {p.emoji}
-            </div>
+           <div className="relative h-52 w-full overflow-hidden">
+  <Image
+    src={p.image}
+    alt={p.title}
+    fill
+    className="object-cover group-hover:scale-105 transition-transform duration-500"
+  />
+
+  {/* overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+
+  {/* tag floating on image */}
+  <div className="absolute top-4 left-4">
+    <span className="inline-block bg-green-accent/20 backdrop-blur-md text-green-accent border border-green-accent/30 px-3 py-1 rounded-full text-[11px] uppercase tracking-widest">
+      {p.tag}
+    </span>
+  </div>
+</div>
             <div className="p-6">
               <span className="inline-block bg-green-accent/15 text-green-accent border border-green-accent/30 px-3 py-1 rounded-full text-[11px] uppercase tracking-widest mb-3">
                 {p.tag}

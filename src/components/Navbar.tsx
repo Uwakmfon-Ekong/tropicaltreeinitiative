@@ -2,8 +2,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Home from "@/app/page";
 
 const links = [
+  {label:"Home", href:"/"},
   { label: "About", href: "/about" },
   { label: "Our Work", href: "/thematic" },
   { label: "Projects", href: "/projects" },
@@ -79,28 +81,49 @@ export default function Navbar() {
         {open ? "✕" : "☰"}
       </button>
 
-      {open && (
-        <div className="absolute top-[70px] left-0 right-0 bg-green-dark flex flex-col gap-4 px-[5%] py-6 md:hidden">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="text-cream/80 text-sm uppercase tracking-widest"
-            >
-              {l.label}
-            </Link>
-          ))}
+      {/* MOBILE MENU */}
+{open && (
+  <div className="fixed inset-0 z-50 bg-green-dark h-screen flex flex-col gap-6 px-[5%] py-20 md:hidden">
+    
+    {/* CLOSE BUTTON */}
+    <button
+      className="absolute top-6 right-6 text-cream text-3xl"
+      onClick={() => setOpen(false)}
+    >
+      ✕
+    </button>
 
-          <Link
-            href="/contact"
-            onClick={() => setOpen(false)}
-            className="bg-green-light text-white text-sm uppercase tracking-widest px-5 py-3 rounded-full text-center"
-          >
-            Contact Us
-          </Link>
-        </div>
-      )}
+    {/* LINKS */}
+    {links.map((l) => (
+      <Link
+        key={l.href}
+        href={l.href}
+        onClick={() => setOpen(false)}
+        className="text-cream/80 text-sm uppercase tracking-widest text-center"
+      >
+        {l.label}
+      </Link>
+    ))}
+
+    {/* CONTACT */}
+    <Link
+      href="/contact"
+      onClick={() => setOpen(false)}
+      className="bg-green-light text-white text-sm uppercase tracking-widest px-5 py-3 rounded-full text-center"
+    >
+      Contact Us
+    </Link>
+
+    {/* DONATE */}
+    <Link
+      href="/donate"
+      onClick={() => setOpen(false)}
+      className="bg-white text-green-dark text-sm uppercase tracking-widest px-5 py-3 rounded-full text-center font-semibold"
+    >
+      Donate
+    </Link>
+  </div>
+)}
     </nav>
   );
 }
