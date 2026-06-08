@@ -8,25 +8,40 @@ const partners = [
     url: "https://tropicalcentre.org/",
   },
   {
-    name: "UNEP",
+    name: "Clean Air Tree",
     logo: "/cleanairlogo.png",
     url: "https://clean-air-tree.pxxl.pro/",
   },
  {
-    name: "TRCC",
-    logo: "/tropslogo.png",
-    url: "https://tropicalcentre.org/",
+    name: "C02 balance",
+    logo: "/co2balancelogo.avif",
+    url: "https://co2balance.com/",
   },
   {
-    name: "UNEP",
-    logo: "/cleanairlogo.png",
-    url: "https://clean-air-tree.pxxl.pro/",
+    name: "Global Landcare",
+    logo: "/globallandcarelogo.webp",
+    url: "https://globallandcare.org/",
   },
   {
-    name: "TRCC",
-    logo: "/tropslogo.png",
-    url: "https://tropicalcentre.org/",
+    name: "sdg program",
+    logo: "/sdgeflogo.png",
+    url: "https://sgp.undp.org/",
   },
+  {
+    name: "p.z.a",
+    logo: "/pzalogo.svg",
+    url: "https://www.pittsburghzoo.org/",
+  },
+  {
+    name:"PRCF",
+    logo:"/prcf.jpeg",
+    url:"https://prcfoundation.org/"
+  },
+  {
+    name:"First Climate",
+    logo:"/firstclimate.png",
+    url:"https://www.firstclimate.com/en/"
+  }
   
 ];
 

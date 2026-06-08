@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 const details = [
   { icon: "📞", label: "Phone", value: "+234 806 759 6435" },
-  { icon: "✉️", label: "Email", value: "info@tropicalcentre.org" },
+  { icon: "✉️", label: "Email", value: "info@tropicalconservationcentre.org" },
 ];
 
 export default function ContactPage() {

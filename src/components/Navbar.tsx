@@ -2,15 +2,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Home from "@/app/page";
 
 const links = [
-  {label:"Home", href:"/"},
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Our Work", href: "/thematic" },
   { label: "Projects", href: "/projects" },
   { label: "Partners", href: "/partners" },
-  { label: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {
@@ -66,9 +64,17 @@ export default function Navbar() {
         <li>
           <Link
             href="/contact"
-            className="bg-green-light text-white text-xs uppercase tracking-widest px-5 py-2 rounded-full hover:bg-green-bright transition"
+            className="bg-green-light text-white text-xs uppercase tracking-widest px-5 py-3 rounded-full hover:bg-green-bright transition"
           >
             Contact Us
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/donate"
+            className="bg-white text-green-dark text-xs uppercase tracking-widest px-5 py-3 rounded-full hover:bg-cream font-semibold transition"
+          >
+            Donate
           </Link>
         </li>
       </ul>
@@ -82,48 +88,47 @@ export default function Navbar() {
       </button>
 
       {/* MOBILE MENU */}
-{open && (
-  <div className="fixed inset-0 z-50 bg-green-dark h-screen flex flex-col gap-6 px-[5%] py-20 md:hidden">
-    
-    {/* CLOSE BUTTON */}
-    <button
-      className="absolute top-6 right-6 text-cream text-3xl"
-      onClick={() => setOpen(false)}
-    >
-      ✕
-    </button>
+      {open && (
+        <div className="fixed inset-0 z-50 bg-green-dark h-screen flex flex-col gap-6 px-[5%] py-20 md:hidden">
+          {/* CLOSE BUTTON */}
+          <button
+            className="absolute top-6 right-6 text-cream text-3xl"
+            onClick={() => setOpen(false)}
+          >
+            ✕
+          </button>
 
-    {/* LINKS */}
-    {links.map((l) => (
-      <Link
-        key={l.href}
-        href={l.href}
-        onClick={() => setOpen(false)}
-        className="text-cream/80 text-sm uppercase tracking-widest text-center"
-      >
-        {l.label}
-      </Link>
-    ))}
+          {/* LINKS */}
+          {links.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              className="text-cream/80 text-sm uppercase tracking-widest text-center"
+            >
+              {l.label}
+            </Link>
+          ))}
 
-    {/* CONTACT */}
-    <Link
-      href="/contact"
-      onClick={() => setOpen(false)}
-      className="bg-green-light text-white text-sm uppercase tracking-widest px-5 py-3 rounded-full text-center"
-    >
-      Contact Us
-    </Link>
+          {/* CONTACT */}
+          <Link
+            href="/contact"
+            onClick={() => setOpen(false)}
+            className="bg-green-light text-white text-sm uppercase tracking-widest px-5 py-3 rounded-full text-center"
+          >
+            Contact Us
+          </Link>
 
-    {/* DONATE */}
-    <Link
-      href="/donate"
-      onClick={() => setOpen(false)}
-      className="bg-white text-green-dark text-sm uppercase tracking-widest px-5 py-3 rounded-full text-center font-semibold"
-    >
-      Donate
-    </Link>
-  </div>
-)}
+          {/* DONATE */}
+          <Link
+            href="/donate"
+            onClick={() => setOpen(false)}
+            className="bg-white text-green-dark text-sm uppercase tracking-widest px-5 py-3 rounded-full text-center font-semibold"
+          >
+            Donate
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }

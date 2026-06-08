@@ -4,7 +4,7 @@ import { useState } from "react";
 const details = [
   { icon: "📍", label: "Address", value: "41 Oron Road, Uyo, Akwa Ibom State, Nigeria" },
   { icon: "📞", label: "Phone", value: "+234 806 759 6435" },
-  { icon: "✉️", label: "Email", value: "info@tropicalcentre.org" },
+  { icon: "✉️", label: "Email", value: "info@tropicalconservationcentre.org" },
 ];
 
 export default function Contact() {
@@ -60,7 +60,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="John Doe"
-                  className="bg-white/6 border border-white/12 rounded-xl px-4 py-3 text-cream text-sm placeholder:text-cream/30 outline-none focus:border-green-light transition-colors"
+                  className="bg-white/6 border border-white/12 rounded-xl px-4 py-3 text-green-900 text-sm placeholder:text-cream/30 outline-none focus:border-green-light transition-colors"
                 />
               </div>
               <div className="flex flex-col gap-1.5">
@@ -70,7 +70,7 @@ export default function Contact() {
                 <input
                   type="email"
                   placeholder="john@example.com"
-                  className="bg-white/6 border border-white/12 rounded-xl px-4 py-3 text-cream text-sm placeholder:text-cream/30 outline-none focus:border-green-light transition-colors"
+                  className="bg-white/6 border border-white/12 rounded-xl px-4 py-3 text-green-900 text-sm placeholder:text-cream/30 outline-none focus:border-green-light transition-colors"
                 />
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Contact() {
               <label className="text-[11px] text-cream/40 uppercase tracking-widest">
                 Subject
               </label>
-              <select className="bg-white/6 border border-white/12 rounded-xl px-4 py-3 text-cream text-sm outline-none focus:border-green-light transition-colors">
+              <select className="bg-white/6 border border-white/12 rounded-xl px-4 py-3 text-green-900 text-sm outline-none focus:border-green-light transition-colors">
                 <option className="bg-green-dark">Partnership Inquiry</option>
                 <option className="bg-green-dark">Research Collaboration</option>
                 <option className="bg-green-dark">Donation</option>
@@ -92,7 +92,7 @@ export default function Contact() {
               <textarea
                 rows={5}
                 placeholder="Tell us how we can work together..."
-                className="bg-white/6 border border-white/12 rounded-xl px-4 py-3 text-cream text-sm placeholder:text-cream/30 outline-none focus:border-green-light transition-colors resize-none"
+                className="bg-white/6 border border-white/12 rounded-xl px-4 py-3 text-green-900 text-sm placeholder:text-cream/30 outline-none focus:border-green-light transition-colors resize-none"
               />
             </div>
             <button
