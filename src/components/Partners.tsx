@@ -47,7 +47,7 @@ const partners = [
 
 export default function Partners() {
   return (
-    <section className="bg-cream py-24 px-[5%] overflow-hidden">
+    <section className="bg-cream py-14 px-[5%] overflow-hidden">
       {/* Header */}
       <div className="text-center mb-14">
         <span className="text-xs font-medium text-green-light uppercase tracking-[0.12em] block mb-3">

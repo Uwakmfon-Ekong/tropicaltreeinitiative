@@ -1,16 +1,9 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/donate-stripe/route": "app/api/donate-stripe/route.js",
-  "/api/donate-paystack/route": "app/api/donate-paystack/route.js",
-  "/about/environment/page": "app/about/environment/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/about/page": "app/about/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/donate/page": "app/donate/page.js",
-  "/donate/success/page": "app/donate/success/page.js",
-  "/page": "app/page.js",
-  "/partners/page": "app/partners/page.js",
   "/projects/page": "app/projects/page.js",
-  "/thematic/page": "app/thematic/page.js",
-  "/volunteer/page": "app/volunteer/page.js"
+  "/projects/mangrove-restoration/page": "app/projects/mangrove-restoration/page.js",
+  "/partners/page": "app/partners/page.js",
+  "/donate/page": "app/donate/page.js",
+  "/projects/agro-forestry/page": "app/projects/agro-forestry/page.js",
+  "/projects/ondo-consultation/page": "app/projects/ondo-consultation/page.js",
+  "/contact/page": "app/contact/page.js"
 }

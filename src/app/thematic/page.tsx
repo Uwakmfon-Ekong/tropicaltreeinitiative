@@ -27,8 +27,8 @@ const areas = [
     image: "/trcc 5.jpg",
   },
   {
-    title: "Land Restoration",
-    desc: "Reviving degraded and deforested lands into productive ecosystems through strategic planting and conservation.",
+    title: "Renewable Energy",
+    desc: "Promoting clean energy solutions and reducing reliance on fossil fuels through innovative tree-based projects.",
     image: "/trcc 6.jpg",
   },
   {

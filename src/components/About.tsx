@@ -1,17 +1,21 @@
 import Image from "next/image";
+import { Eye, Target, ListChecks } from "lucide-react";
 
 const pillars = [
   {
     title: "Vision",
     text: "A sound society living in harmony with nature, where communities and ecosystems thrive together sustainably.",
+    icon: Eye,
   },
   {
     title: "Mission",
     text: "To create awareness and build the capacity of rural communities by promoting sustainable agriculture, environmental conservation, healthy living, and the preservation of indigenous knowledge.",
+    icon: Target,
   },
   {
     title: "Objectives",
     text: "We promote natural resource conservation, educate communities on environmental and socio-economic sustainability, and support improved livelihoods through practices like organic farming, mixed cropping, and livestock production.",
+    icon: ListChecks,
   },
 ];
 
@@ -58,20 +62,25 @@ export default function About() {
           </p>
 
           <div className="flex flex-col gap-4">
-            {pillars.map((p) => (
-              <div
-                key={p.title}
-                className="p-6 rounded-2xl border border-green-light/15 bg-cream hover:border-green-light hover:translate-x-1 transition-all duration-200 cursor-default"
-              >
-                <div className="w-9 h-9 rounded-xl bg-green-pale flex items-center justify-center text-base mb-3"></div>
-                <h3 className="text-xs font-medium text-green-dark uppercase tracking-widest mb-1.5">
-                  {p.title}
-                </h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {p.text}
-                </p>
-              </div>
-            ))}
+            {pillars.map((p) => {
+              const Icon = p.icon;
+              return (
+                <div
+                  key={p.title}
+                  className="group p-6 rounded-2xl border border-green-light/15 bg-cream hover:border-green-light hover:bg-white hover:shadow-md hover:translate-x-1 transition-all duration-300 cursor-default"
+                >
+                  <div className="w-11 h-11 rounded-xl bg-green-dark flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300">
+                    <Icon size={20} strokeWidth={1.75} className="text-white" />
+                  </div>
+                  <h3 className="text-xs font-semibold text-green-dark uppercase tracking-widest mb-2">
+                    {p.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">
+                    {p.text}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -22,24 +22,24 @@ const projects = [
     title: "Ondo State Community Consultation",
     desc: "Stakeholder-driven conservation planning bringing local voices to the center of environmental decision-making.",
   },
-  {
-    image: "/mangroverestore.jpeg",
-    tag: "Research",
-    title: "Biodiversity Monitoring Program",
-    desc: "Systematic documentation of flora and fauna across TRCC project sites to measure ecological recovery and conservation impact.",
-  },
-  {
-    image: "/socialimpact.jpeg",
-    tag: "Education",
-    title: "School Environmental Clubs",
-    desc: "Establishing green clubs in schools across Akwa Ibom State to build the next generation of environmental advocates.",
-  },
-  {
-    image: "/trcc1.jpg",
-    tag: "Ongoing",
-    title: "Seedling Distribution Network",
-    desc: "Distributing free seedlings to households, schools, churches, and community centers to expand Nigeria's green cover.",
-  },
+  // {
+  //   image: "/mangroverestore.jpeg",
+  //   tag: "Research",
+  //   title: "Biodiversity Monitoring Program",
+  //   desc: "Systematic documentation of flora and fauna across TRCC project sites to measure ecological recovery and conservation impact.",
+  // },
+  // {
+  //   image: "/socialimpact.jpeg",
+  //   tag: "Education",
+  //   title: "School Environmental Clubs",
+  //   desc: "Establishing green clubs in schools across Akwa Ibom State to build the next generation of environmental advocates.",
+  // },
+  // {
+  //   image: "/trcc1.jpg",
+  //   tag: "Ongoing",
+  //   title: "Seedling Distribution Network",
+  //   desc: "Distributing free seedlings to households, schools, churches, and community centers to expand Nigeria's green cover.",
+  // },
 ];
 
 export default function ProjectsPage() {
